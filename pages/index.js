@@ -1,8 +1,18 @@
 // pages/index.js
+import Link from "next/link";
+import CarCard from "../components/modules/CarCard";
+import SearchBox from "../components/modules/SearchBox";
+import FilteredCar from "../components/templates/FilteredCar";
+import carsData from "../data/carsData";
+import SeeAllCarsButton from "../components/modules/SeeAllCarsButton";
+
 function index() {
+  const filteredCars = carsData.slice(0, 3);
   return (
-    <div>
-      <div className="text-2xl font-bold">Home Page</div>
+    <div className="mb-20 flex w-full flex-col items-center justify-center gap-y-5">
+      <SearchBox />
+      <SeeAllCarsButton />
+      <FilteredCar filteredCars={filteredCars} />;
     </div>
   );
 }
