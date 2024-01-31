@@ -1,6 +1,5 @@
 // components/layouts/Layout.js
 import Link from "next/link";
-
 function Layout({ children }) {
   return (
     <div className="flex min-h-screen flex-col items-center bg-slate-100 font-[Roboto]">

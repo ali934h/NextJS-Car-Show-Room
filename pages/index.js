@@ -1,6 +1,4 @@
 // pages/index.js
-import Link from "next/link";
-import CarCard from "../components/modules/CarCard";
 import SearchBox from "../components/modules/SearchBox";
 import FilteredCar from "../components/templates/FilteredCar";
 import carsData from "../data/carsData";

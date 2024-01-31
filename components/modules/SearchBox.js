@@ -1,10 +1,11 @@
 // components/modules/SearchBox.js
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
-
 function SearchBox() {
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
+  const router = useRouter();
   return (
     <div className="mt-3 flex w-1/2 flex-col items-center text-sm">
       <div className="flex h-full w-full flex-col gap-y-10">
@@ -29,12 +30,14 @@ function SearchBox() {
               }}
             />
           </div>
-          <Link
-            href={`/filter/${minPrice || 0}/${maxPrice || 100_000_000}`}
+          <button
+            onClick={(event) =>
+              router.push(`/filter/${minPrice || 0}/${maxPrice || 100_000_000}`)
+            }
             className="flex items-center rounded-md border bg-primary px-3"
           >
             Search
-          </Link>
+          </button>
         </div>
 
         <div className="flex justify-between gap-x-3 text-base">

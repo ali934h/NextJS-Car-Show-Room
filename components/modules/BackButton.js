@@ -1,7 +1,6 @@
 // components/modules/BackButton.js
 import Link from "next/link";
 import { IoArrowBackCircleSharp } from "react-icons/io5";
-
 function BackButton() {
   return (
     <div className="w-9/12">
