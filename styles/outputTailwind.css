@@ -580,12 +580,8 @@ video {
   min-height: 100vh;
 }
 
-.w-4\/12 {
-  width: 33.333333%;
-}
-
-.w-8\/12 {
-  width: 66.666667%;
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-9\/12 {
@@ -599,22 +595,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-6\/12 {
-  width: 50%;
-}
-
-.w-5\/12 {
-  width: 41.666667%;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .max-w-80 {
@@ -631,10 +611,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-center {
